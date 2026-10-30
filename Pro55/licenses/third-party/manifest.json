@@ -1,0 +1,107 @@
+[
+  {
+    "notice": "JUCE-LICENSE.md",
+    "upstreamFile": "LICENSE.md",
+    "sha256": "A37EAEFE4F160DA98BC07D2E8D951E46A9B52ABD6E23B233FFCADF003D690F93"
+  },
+  {
+    "notice": "clap-juce-extensions-MIT.txt",
+    "upstreamFile": "LICENSE.md",
+    "sha256": "D28D9CD501E65EF5011C9AA0ECF9AA5DF99EACE7193E2BF6E2AAA6854D1FF037"
+  },
+  {
+    "notice": "CLAP-MIT.txt",
+    "upstreamFile": "clap-libs/clap/LICENSE",
+    "sha256": "DA7CEE3F00825D45DB7CAD8E0C65ABF150FAAD60F4ACB0AB46137887BA536ABE"
+  },
+  {
+    "notice": "clap-helpers-MIT.txt",
+    "upstreamFile": "clap-libs/clap-helpers/LICENSE",
+    "sha256": "DA7CEE3F00825D45DB7CAD8E0C65ABF150FAAD60F4ACB0AB46137887BA536ABE"
+  },
+  {
+    "notice": "VST3-MIT.txt",
+    "upstreamFile": "modules/juce_audio_processors_headless/format_types/VST3_SDK/LICENSE.txt",
+    "sha256": "D6115B263FAA1CDF8C7372D70889C833DDE1CEC95252E7EE93E4F7D599EC96CA"
+  },
+  {
+    "notice": "FLAC.txt",
+    "upstreamFile": "modules/juce_audio_formats/codecs/flac/Flac Licence.txt",
+    "sha256": "123926094AA97C30E346C23A12A453B7063C56E6C414E342DD5AE0FEA13BD77D"
+  },
+  {
+    "notice": "Ogg-Vorbis.txt",
+    "upstreamFile": "modules/juce_audio_formats/codecs/oggvorbis/Ogg Vorbis Licence.txt",
+    "sha256": "62D5CE5C59484DC99E462EC8F815BFC76F64A2E4759500C14BEAF3772A7D1181"
+  },
+  {
+    "notice": "JPEG-README.txt",
+    "upstreamFile": "modules/juce_graphics/image_formats/jpglib/README",
+    "sha256": "913AF09F785683ACCDF660B85DCF27FDD567D4AD649DAA95CB8771B040DB79D1"
+  },
+  {
+    "notice": "PNG.txt",
+    "upstreamFile": "modules/juce_graphics/image_formats/pnglib/LICENSE",
+    "sha256": "BDB0A645EA18C60507D0368379B1AC5474B92255FCC2D115E07486A7672BA526"
+  },
+  {
+    "notice": "zlib.txt",
+    "upstreamFile": "modules/juce_core/zip/zlib/LICENSE",
+    "sha256": "E32FF4E00D9D94930537635291DA39E7E612703334BF6FDE8C7F1686FE8A45A2"
+  },
+  {
+    "notice": "HarfBuzz.txt",
+    "upstreamFile": "modules/juce_graphics/fonts/harfbuzz/COPYING",
+    "sha256": "BA8F810F2455C2F08E2D56BB49B72F37FCF68F1F4FADE38977CFD7372050AD64"
+  },
+  {
+    "notice": "SheenBidi.txt",
+    "upstreamFile": "modules/juce_graphics/unicode/sheenbidi/LICENSE",
+    "sha256": "CFC7749B96F63BD31C3C42B5C471BF756814053E847C10F3EB003417BC523D30"
+  },
+  {
+    "notice": "LunaSVG.txt",
+    "upstreamFile": "modules/juce_graphics/drawables/lunasvg/LICENSE",
+    "sha256": "E008AB9F8B36EC517CC47BE20E776E68D69F5BA75F8F774D506AE4696D0E50C4"
+  },
+  {
+    "notice": "PlutoVG.txt",
+    "upstreamFile": "modules/juce_graphics/drawables/lunasvg/plutovg/LICENSE",
+    "sha256": "E008AB9F8B36EC517CC47BE20E776E68D69F5BA75F8F774D506AE4696D0E50C4"
+  },
+  {
+    "notice": "LV2.txt",
+    "upstreamFile": "modules/juce_audio_processors_headless/format_types/LV2_SDK/lv2/COPYING",
+    "sha256": "0B0B07D852E3CE7FA04986E141F73001BD7F260683968F0A19E02DBCC4131AA6"
+  },
+  {
+    "notice": "Lilv.txt",
+    "upstreamFile": "modules/juce_audio_processors_headless/format_types/LV2_SDK/lilv/COPYING",
+    "sha256": "E06562D6BCF0341B2AC2AD0F0CA36801D2EBF388D5EF297011625E4C36E963F0"
+  },
+  {
+    "notice": "Serd.txt",
+    "upstreamFile": "modules/juce_audio_processors_headless/format_types/LV2_SDK/serd/COPYING",
+    "sha256": "E06562D6BCF0341B2AC2AD0F0CA36801D2EBF388D5EF297011625E4C36E963F0"
+  },
+  {
+    "notice": "Sord.txt",
+    "upstreamFile": "modules/juce_audio_processors_headless/format_types/LV2_SDK/sord/COPYING",
+    "sha256": "E06562D6BCF0341B2AC2AD0F0CA36801D2EBF388D5EF297011625E4C36E963F0"
+  },
+  {
+    "notice": "Sratom.txt",
+    "upstreamFile": "modules/juce_audio_processors_headless/format_types/LV2_SDK/sratom/COPYING",
+    "sha256": "3FC429D6B944FA20306357196A28BB4DD7C25E2D67EDEBEC771F44DE5BD7F9E8"
+  },
+  {
+    "notice": "Cmajor-LICENSE.md",
+    "upstreamFile": "LICENSE.md",
+    "sha256": "F05C2B4B5794B66F56A520E4B92BB86F9343A818036EC50F9F1C401A107AD33F"
+  },
+  {
+    "notice": "Cmajor-Pro54-README.md",
+    "upstreamFile": "README.md",
+    "sha256": "367190B5A51137729FDD94689864EB00ECFBF660DB6439DFF53FC723F2EF01FD"
+  }
+]

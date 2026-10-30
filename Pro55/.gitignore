@@ -1,0 +1,12 @@
+# Local builds may contain binaries from earlier development versions.
+/build/
+/build-alt/
+/*.exe
+/*.vst3/
+/*.clap
+**/__pycache__/
+*.user
+*.suo
+
+# Project-local Codex/GSD runtime files contain machine-specific paths.
+/.codex/

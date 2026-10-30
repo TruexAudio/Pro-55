@@ -1,0 +1,28 @@
+name: Pro-55 beta bug report
+description: Report a reproducible problem with the Windows beta.
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Pro-55 version and plugin format
+      placeholder: 0.9.0 beta.1, VST3 or CLAP
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Windows version, host/version and sample rate
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Include what you expected and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: material
+    attributes:
+      label: Optional screenshots, logs or example material
+      description: Share only files you choose to make public; projects or audio are not required.
