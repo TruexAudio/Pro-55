@@ -1,41 +1,31 @@
 # Pro-55
 
-**Is a Free Sequential Circuits Prophet 5-inspired synthesizer for Windows (MacOS soon!), available as VST3 and CLAP.** Pro-55 is a TrueX Audio instrument built around the Cmajor [Pro-54 synthesis engine](https://github.com/cmajor-lang/cmajor/tree/main/examples/patches/Pro54, itself a port of the Native Instruments Pro-53.
+A free polyphonic synthesizer inspired by the Sequential Circuits Prophet-5, for Windows x64 as VST3 and CLAP. It accepts MIDI input and produces stereo audio. Pro-55 is a TrueX Audio instrument built around the [Cmajor Pro-54 synthesis engine](https://github.com/cmajor-lang/cmajor/tree/main/examples/patches/Pro54), itself a port of Native Instruments' Pro-53.
 
 ![Pro-55 interface](Pro55/docs/pro55-interface.png)
 
-## The Story
+## What it does
 
-Native Instruments built the first version Pro-Five in early 2000, then refined it into the Pro-52 later that same year. In late 2002, the Pro-53 was released and was widely regarded at the time as one of the best software recreations of a classic analog synth. NI discontinued the Pro-53 in 2020, and for a few years it simply wasn't available to buy or download anywhere.
-Then in 2024, the Cmajor team brought the synth back to life as a web-playable instrument by porting an unreleased internal C++ version of the Pro-53 DSP to their Cmajor language, while also recreating its interface in HTML and JavaScript. That work preserved much of the original structure and became the foundation that made Pro-55 possible.
-
-## What's New and What's Changed?
-In addition to having full compatibility with modern DAWs via 64bit VST3 & CLAP formats, Pro-55 has had its rendering backend updated via JUCE with a revised and resizeable GUI that's compatible with large, modern monitors. The GUI was mostly rebuilt using Photopea, though some of CMajor's original assets remain.
-Native Instruments actually developed alternative filter models for the Pro-53 which incorporated a more modern algorithm and the option for anti-aliasing which never saw commercial light-of-day but were present in CMajor's release. You'll noticed on the bottom-left-hand corner three options - Old, New, & New AA - More details in the Documentation.
-
-I'm really excited to be able to give you a free and open-source (under GPL) CLAP and VST3 version of the plugin.
+Pro-55 combines a polyphonic synthesizer with a 512-address patch programmer. Change controls in the interface, automate supported parameters from your host, and save edited sounds with your project. The shared user bank is separate; changing it does not alter sounds already saved in a project.
 
 ## Download and install
 
-Choose the Windows x64 VST3-only, CLAP-only, or combined ZIP from [GitHub Releases](https://github.com/TruexAudio/Pro-55/releases). The beta is unsigned and has no installer. Follow the [installation and sound-storage guide](Pro55/INSTALLATION.md).
+Windows x64 VST3-only, CLAP-only, and combined beta ZIPs will be published on [GitHub Releases](https://github.com/TruexAudio/Pro-55/releases) when the public beta launches. For now, this repository is in private release review and no public downloads are available. See the [installation and sound-storage guide](Pro55/INSTALLATION.md).
 
-## Sound/Patch storage
+## Sound storage
 
-The factory bank has 512 slots, numbered 111–888. To save a sound into the shared bank, press **RECORD** to capture it, choose a destination and optional name, then press **RECORD** again. Back up the user bank before replacing or resetting it. The [installation guide](Pro55/INSTALLATION.md) explains how project recall and the shared bank work.
+The factory bank has 512 addresses, numbered 111–888. To save a sound into the shared bank, press **RECORD** to capture it, choose a destination and optional name, then press **RECORD** again. Back up the user bank before replacing or resetting it. The [installation guide](Pro55/INSTALLATION.md) explains how project recall and the shared bank work.
 
 ## Known limitations
 
-- Windows x64 only. macOS, Linux, AU, and the development standalone are not included (YET!).
-- The plugins are unsigned and supplied without an installer, activation, or telemetry.
-- An initial smoke test succeeded for both formats. The host and test coverage still need to be recorded; broader host and project-recall checks remain open.
-- Earlier DAW tests were completed using CLAP & VST3 in Bitwig, VST3 in REAPER 6.15. REAPER 7 CLAP and FL Studio project save/reload remain unverified.
+- Windows x64 only. macOS, Linux, Audio Unit, and the development standalone are not included.
+- The plugins are unsigned and have no installer, activation, or telemetry.
+- After the Pro-55 identity change, initial smoke tests passed for both VST3 and CLAP. Earlier DAW checks used the previous Pro-54 identity: Bitwig (VST3 and CLAP), REAPER 6.15 (VST3), plus checks in Ableton Live and FL Studio. REAPER 7 CLAP and FL Studio project save/reload remain unverified with Pro-55.
 
 ## Build from source
 
-The complete source is available in the [GitHub repository](https://github.com/TruexAudio/Pro-55) and source archive. See the [Windows build instructions](Pro55/BUILDING.md) for the toolchain, included dependencies, and commands. The source archive contains the native project, DSP source, factory bank and source, tests, runtime assets, build utilities, and third-party notices.
+The full source code is in this repository. See the [Windows build instructions](Pro55/BUILDING.md) for the toolchain, included dependencies, and commands. The source includes the native project, DSP source, factory bank and source, tests, runtime assets, build utilities, and third-party notices.
 
-For issue reports, use [GitHub Issues](https://github.com/TruexAudio/Pro-55/issues). Include your Windows version, host and version, plugin format, sample rate, and steps to reproduce the problem OR email t_r_uexaudio@gmail.com (remove the underscores).
+## Credits and licensing
 
-## Credits and licences
-
-New native code and the Pro-55 interface are by **Grant Overend (TrueX Audio)**. The interface includes adaptations from the [Cmajor Pro-54 example](https://cmajor.dev/docs/Examples/Pro54/), used with permission from Cmajor with attribution. The inherited synthesis DSP and factory sounds also come from that example, which credits the original Native Instruments Pro-53. Upstream notices are retained. See [licensing](Pro55/LICENSING.md), [third-party notices](Pro55/THIRD_PARTY_NOTICES.md), and [artwork and preset provenance](Pro55/ASSET-PROVENANCE.md).
+New Pro-55 code and the interface are by **Grant Overend (TrueX Audio)** and licensed under AGPL-3.0. Some control artwork is adapted from the [Cmajor Pro-54 example](https://cmajor.dev/docs/Examples/Pro54/), used with permission and attribution. The inherited DSP and factory sounds also come from that example. Its DSP source retains GPL-3.0-or-later terms; other dependencies retain their own licences. Cmajor credits the original Native Instruments Pro-53. See [licensing](Pro55/LICENSING.md), [third-party notices](Pro55/THIRD_PARTY_NOTICES.md), and [artwork and preset provenance](Pro55/ASSET-PROVENANCE.md).
