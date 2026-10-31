@@ -1,4 +1,6 @@
-# Install Pro-55 on Windows
+# Install Pro-55
+
+## Windows x64
 
 Pro-55 0.9.0 Public Beta targets Windows x64. Separate unsigned VST3-only and CLAP-only ZIPs are available, along with an optional combined ZIP.
 
@@ -8,6 +10,18 @@ Pro-55 0.9.0 Public Beta targets Windows x64. Separate unsigned VST3-only and CL
 4. Restart the host and rescan plugins if necessary. Windows may require administrator permission to copy into system folders. Your host may support a configured user plugin folder.
 
 A single-format ZIP contains only the plugin named in its filename. The combined ZIP contains both. Install only the formats your host supports. The development standalone is not included.
+
+## Apple Silicon macOS beta
+
+The macOS beta is for Apple Silicon (arm64) only. Download the separate AUv2, VST3, or CLAP ZIP, close your audio host, extract it, and copy the complete plugin bundle into the matching folder:
+
+- AUv2 (`Pro-55.component`): `~/Library/Audio/Plug-Ins/Components`
+- VST3 (`Pro-55.vst3`): `~/Library/Audio/Plug-Ins/VST3`
+- CLAP (`Pro-55.clap`): `~/Library/Audio/Plug-Ins/CLAP`
+
+Keep each bundle intact. Restart your host or rescan its plugins. GarageBand and Logic use the AUv2 build; VST3 and CLAP require a host that supports those formats.
+
+These beta builds have an ad-hoc signature, with no Developer ID signature or notarization. macOS may display a security warning. The build targets macOS 11.0 but has only been tested on macOS 26.6.2; Intel Macs and earlier macOS versions are unverified.
 
 ## Sound storage and bank backup
 
@@ -25,4 +39,4 @@ If the bank is damaged, Pro-55 warns and uses factory sounds while protecting th
 
 ## Beta feedback
 
-Use [GitHub Issues](https://github.com/TruexAudio/Pro-55/issues). Include your Windows version, host and version, VST3 or CLAP, sample rate, expected result and steps to reproduce the issue. Share project, preset or audio material only when you choose to.
+Use [GitHub Issues](https://github.com/TruexAudio/Pro-55/issues). Include your operating system and version, host and version, plugin format, sample rate, expected result, and steps to reproduce the issue. Share project, preset, or audio material only when you choose to.

@@ -44,3 +44,25 @@ node tools/convert_factory_bank.mjs provenance/presetBank.js presets/Factory.pro
 ```
 
 This regeneration step is optional and is not required to build the plugins.
+
+## macOS Apple Silicon
+
+The macOS build uses the included JUCE 9.0.0 and CLAP integration sources. Build on an Apple Silicon Mac with CMake 3.24 or later and Xcode Command Line Tools installed. The release build was made on macOS 26.6.2 with Apple Clang 21.0.0. Its deployment target is macOS 11.0, but macOS 11 compatibility has not been tested.
+
+Open Terminal in the repository's `Pro55` folder and run:
+
+```sh
+cmake -S . -B build-macos -G "Unix Makefiles" \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DCMAKE_OSX_ARCHITECTURES=arm64 \
+  -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 \
+  -DJUCE_DIR="$PWD/../vendor/JUCE" \
+  -DCLAP_JUCE_EXTENSIONS_DIR="$PWD/../vendor/clap-juce-extensions" \
+  -DPRO55_ALT_GUI=ON \
+  -DPRO55_BUILD_TESTS=OFF
+
+cmake --build build-macos --config Release --parallel 4 \
+  --target Pro55_AU Pro55_VST3 Pro55_CLAP
+```
+
+The AUv2, VST3, and CLAP bundles are written under `build-macos/Pro55_artefacts/Release/`. The published beta was signed ad-hoc and passed strict signature verification after all generated bundle files were present. It has no Developer ID signature or notarization. The Mac beta received limited checks in GarageBand and Bitwig Studio; other hosts and older macOS releases remain unverified.
