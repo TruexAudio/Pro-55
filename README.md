@@ -10,7 +10,7 @@ Pro-55 combines a polyphonic synthesizer with a 512-address patch programmer. Ch
 
 ## Download and install
 
-Windows x64 VST3-only, CLAP-only, and combined beta ZIPs will be published on [GitHub Releases](https://github.com/TruexAudio/Pro-55/releases) when the public beta launches. For now, this repository is in private release review and no public downloads are available. See the [installation and sound-storage guide](Pro55/INSTALLATION.md).
+Windows x64 VST3-only, CLAP-only, and combined beta ZIPs are available from the [Pro-55 0.9.0-beta release](https://github.com/TruexAudio/Pro-55/releases/tag/v0.9.0-beta). Choose the format supported by your DAW, or download the combined ZIP. See the [installation and sound-storage guide](Pro55/INSTALLATION.md).
 
 ## Sound storage
 
